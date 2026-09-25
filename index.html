@@ -1,5 +1,329 @@
-<script type="text/javascript">
-<!--
-document.write(unescape('%3c%68%74%6d%6c%3e%0d%0a%20%20%3c%68%65%61%64%3e%0d%0a%20%20%20%20%3c%74%69%74%6c%65%20%3e%52%65%64%69%72%65%63%74%20%74%6f%20%44%61%72%6b%4e%65%74%20%2d%20%50%52%49%56%41%54%45%3c%2f%74%69%74%6c%65%3e%0d%0a%20%20%20%20%3c%6d%65%74%61%20%6e%61%6d%65%3d%22%76%69%65%77%70%6f%72%74%22%20%63%6f%6e%74%65%6e%74%3d%22%77%69%64%74%68%3d%64%65%76%69%63%65%2d%77%69%64%74%68%2c%20%69%6e%69%74%69%61%6c%2d%73%63%61%6c%65%3d%31%22%3e%0d%0a%20%20%20%20%3c%6c%69%6e%6b%20%72%65%6c%3d%22%73%74%79%6c%65%73%68%65%65%74%22%20%74%79%70%65%3d%22%74%65%78%74%2f%63%73%73%22%20%68%72%65%66%3d%22%73%74%79%6c%65%2e%63%73%73%22%3e%0d%0a%3c%21%2d%2d%5b%69%66%20%49%45%20%5d%3e%0d%0a%3c%73%74%79%6c%65%20%74%79%70%65%3d%22%74%65%78%74%2f%63%73%73%22%3e%0d%0a%2f%2a%20%63%73%73%20%70%65%72%20%4d%49%45%20%62%72%6f%77%73%65%72%73%20%2a%2f%0d%0a%68%74%6d%6c%20%7b%6f%76%65%72%66%6c%6f%77%2d%79%3a%68%69%64%64%65%6e%3b%7d%0d%0a%62%6f%64%79%20%7b%6f%76%65%72%66%6c%6f%77%2d%79%3a%61%75%74%6f%3b%7d%0d%0a%23%73%66%6f%6e%64%6f%20%7b%70%6f%73%69%74%69%6f%6e%3a%61%62%73%6f%6c%75%74%65%3b%20%7a%2d%69%6e%64%65%78%3a%2d%31%3b%7d%0d%0a%3c%2f%73%74%79%6c%65%3e%0d%0a%3c%21%5b%65%6e%64%69%66%5d%2d%2d%3e%0d%0a%20%20%3c%2f%68%65%61%64%3e%0d%0a%20%20%3c%62%6f%64%79%3e%0d%0a%3c%73%63%72%69%70%74%20%73%72%63%3d%22%66%75%6e%7a%69%6f%6e%69%2e%6a%73%22%3e%3c%2f%73%63%72%69%70%74%3e%0d%0a%20%20%20%3c%61%72%74%69%63%6c%65%20%69%64%3d%22%66%61%6b%65%73%69%74%65%22%3e%0d%0a%20%20%20%3c%69%6d%67%20%73%72%63%3d%22%62%61%63%6b%6a%73%2e%6a%70%67%22%20%69%64%3d%22%73%66%6f%6e%64%6f%22%20%2f%3e%0d%0a%20%20%20%20%3c%75%6c%3e%0d%0a%09%3c%63%65%6e%74%65%72%3e%0d%0a%20%20%20%20%20%20%3c%68%32%3e%3c%68%31%3e%57%41%52%4e%49%4e%47%3c%2f%68%31%3e%0d%0a%09%20%20%3c%68%31%3e%47%65%74%20%76%70%6e%20%66%69%72%73%74%20%74%6f%20%65%6e%74%65%72%20%69%6e%20%74%68%65%20%64%61%72%6b%6e%65%74%2c%20%6d%61%6b%65%20%79%6f%75%20%73%65%63%75%72%65%20%3c%2f%68%31%3e%0d%0a%20%20%20%20%20%20%20%20%3c%69%6e%70%75%74%20%74%79%70%65%3d%22%62%75%74%74%6f%6e%22%20%6f%6e%63%6c%69%63%6b%3d%22%67%6f%5f%66%75%6c%6c%5f%73%63%72%65%65%6e%28%29%3b%20%61%74%74%69%76%61%28%29%3b%22%20%76%61%6c%75%65%3d%22%44%4f%4e%27%54%20%41%43%43%45%53%53%22%2f%3e%0d%0a%09%20%20%3c%2f%63%65%6e%74%65%72%3e%0d%0a%09%20%20%3c%2f%75%6c%3e%0d%0a%09%20%20%3c%2f%61%72%74%69%63%6c%65%3e%0d%0a%09%20%20%0d%0a%09%20%3c%64%69%76%20%69%64%3d%22%6a%75%6d%70%73%63%61%72%65%22%20%73%74%79%6c%65%3d%22%64%69%73%70%6c%61%79%3a%20%6e%6f%6e%65%3b%22%3e%0d%0a%09%20%20%20%20%20%3c%61%75%64%69%6f%20%69%64%3d%22%61%75%64%69%6f%22%3e%0d%0a%09%09%09%3c%73%6f%75%72%63%65%20%73%72%63%3d%22%73%63%61%72%65%2e%6d%70%33%22%20%74%79%70%65%3d%22%61%75%64%69%6f%2f%6d%70%65%67%22%3e%0d%0a%20%20%20%20%20%20%20%20%20%3c%2f%61%75%64%69%6f%3e%0d%0a%20%20%20%20%20%20%20%20%20%3c%69%6d%67%20%73%72%63%3d%22%6a%61%6d%70%2e%67%69%66%22%3e%0d%0a%09%09%20%3c%70%20%69%64%3d%22%6d%65%73%73%61%67%65%22%3e%3c%2f%70%3e%0d%0a%09%09%20%3c%2f%64%69%76%3e%0d%0a%20%20%3c%2f%62%6f%64%79%3e%0d%0a%3c%2f%68%74%6d%6c%3e'));
-//-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Windows Security Troll (Copy)</title>
+<style>
+  * { box-sizing: border-box; }
+  :root {
+    --win-bg: #f3f3f3;
+    --win-card: #ffffff;
+    --win-text: #1b1b1b;
+    --win-sub: #5c5c5c;
+    --win-blue: #0067c0;
+    --win-red: #c42b1c;
+    --win-border: #e0e0e0;
+  }
+  html, body {
+    margin: 0; width: 100%; height: 100%; overflow: hidden;
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    background: var(--win-bg); color: var(--win-text);
+  }
+  body { display: flex; align-items: center; justify-content: center; }
+
+  /* ---------- screen 1: looks like a real Windows Security prompt ---------- */
+  #warning {
+    width: min(460px, 90vw);
+    background: var(--win-card);
+    border: 1px solid var(--win-border);
+    border-radius: 8px;
+    box-shadow: 0 8px 28px rgba(0,0,0,.14);
+    overflow: hidden;
+  }
+  .titlebar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-bottom: 1px solid var(--win-border);
+    font-size: 13px; color: var(--win-sub);
+  }
+  #warning .body { padding: 22px 24px 26px; }
+  .shield { width: 42px; height: 42px; margin-bottom: 14px; }
+  h1 { font-size: 17px; font-weight: 600; margin: 0 0 8px; }
+  p { color: var(--win-sub); font-size: 13.5px; line-height: 1.55; margin: 0 0 6px; }
+  .filepath {
+    font-family: Consolas, monospace; font-size: 12px; color: #444;
+    background: #f6f6f6; border: 1px solid var(--win-border); border-radius: 4px;
+    padding: 8px 10px; margin: 14px 0; word-break: break-all;
+  }
+  .btn-row { display: flex; gap: 10px; margin-top: 18px; justify-content: flex-end; }
+  button {
+    font-family: inherit; font-size: 13.5px; padding: 8px 18px;
+    border-radius: 4px; cursor: pointer; border: 1px solid transparent;
+  }
+  #enter { background: var(--win-blue); color: #fff; font-weight: 600; }
+  #enter:hover { background: #005a9e; }
+  #dismiss { background: #fff; color: var(--win-text); border-color: #cfcfcf; }
+  #dismiss:hover { background: #f2f2f2; }
+
+  /* ---------- screen 2: scan in progress ---------- */
+  #fake-check { display: none; width: min(460px, 90vw); }
+  .scancard {
+    background: var(--win-card); border: 1px solid var(--win-border); border-radius: 8px;
+    box-shadow: 0 8px 28px rgba(0,0,0,.14); padding: 24px 24px 20px;
+  }
+  .scanhead { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .ring {
+    width: 30px; height: 30px; border-radius: 50%;
+    border: 3px solid #d9e8f5; border-top-color: var(--win-blue);
+    animation: spin .8s linear infinite; flex-shrink: 0;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .scanhead div h2 { font-size: 14.5px; margin: 0; font-weight: 600; }
+  .scanhead div span { font-size: 12px; color: var(--win-sub); }
+
+  #logs {
+    height: 150px; overflow: hidden; font-family: Consolas, monospace; font-size: 11.5px;
+    color: #444; background: #fafafa; border: 1px solid var(--win-border); border-radius: 4px;
+    padding: 10px 12px; line-height: 1.75;
+  }
+  #logs div { white-space: nowrap; }
+  #logs .flag { color: var(--win-red); font-weight: 600; }
+
+  .progress { height: 4px; background: #e6e6e6; margin-top: 14px; border-radius: 2px; overflow: hidden; }
+  #bar { height: 100%; width: 0; background: var(--win-blue); transition: width .2s ease; }
+  .statline { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--win-sub); }
+  #threatcount { color: var(--win-red); font-weight: 600; }
+
+  /* ---------- the jumpscare ---------- */
+  #jumpscare {
+    display: none; position: fixed; inset: 0; z-index: 9999;
+    background: #000; align-items: center; justify-content: center; flex-direction: column;
+  }
+  #trollText {
+    color: #fff; font-weight: 800; text-align: center;
+    font-size: clamp(48px, 14vw, 160px);
+    letter-spacing: -2px;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+  #subText {
+    position: absolute; bottom: calc(9% + env(safe-area-inset-bottom,0px));
+    color: rgba(255,255,255,.55); font-size: clamp(12px,2vw,15px);
+    font-family: "Segoe UI", Arial, sans-serif; letter-spacing: .5px;
+  }
+  .strobe { animation: strobe .08s steps(1) infinite; }
+  @keyframes strobe {
+    0%   { background:#000; }
+    20%  { background:#a00; }
+    40%  { background:#000; }
+    60%  { background:#fff; }
+    80%  { background:#000; }
+    100% { background:#a00; }
+  }
+  .shakeit { animation: shake .06s infinite; }
+  @keyframes shake {
+    0%   { transform: translate(0,0); }
+    25%  { transform: translate(-14px,10px) rotate(-1deg); }
+    50%  { transform: translate(12px,-9px) rotate(1deg); }
+    75%  { transform: translate(-9px,-12px) rotate(-1deg); }
+    100% { transform: translate(10px,11px) rotate(1deg); }
+  }
+
+  #escHint {
+    position: fixed; top: calc(16px + env(safe-area-inset-top,0px)); right: 16px;
+    color: rgba(255,255,255,.35); font-family: monospace; font-size: 11px; z-index: 10000; display:none;
+  }
+
+  /* ---------- gotcha / relief screen ---------- */
+  #gotcha { display: none; width: min(440px, 90vw); }
+  #gotcha .scancard { text-align: left; }
+  #gotcha h2 { font-size: 16px; margin: 0 0 6px; }
+  #gotcha p { margin-bottom: 4px; }
+  #replay { margin-top: 16px; background: var(--win-blue); color: #fff; font-weight: 600; }
+  #replay:hover { background: #005a9e; }
+</style>
+</head>
+<body>
+
+<main id="warning">
+  <div class="titlebar">
+    <svg width="16" height="16" viewBox="0 0 16 16"><path fill="#0067c0" d="M8 1l6 2v5c0 4-2.7 6.4-6 7-3.3-.6-6-3-6-7V3z"/></svg>
+    Windows Security
+  </div>
+  <div class="body">
+    <svg class="shield" viewBox="0 0 24 24" fill="none">
+      <path d="M12 2l8 3v6c0 5.2-3.4 8.7-8 10-4.6-1.3-8-4.8-8-10V5z" fill="#c42b1c"/>
+      <path d="M12 7v6M12 16v.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+    <h1>This device hasn't been scanned in 47 days</h1>
+    <p>Windows Defender recommends running a quick scan to check for potential threats.</p>
+    <div class="filepath">C:\Users\Public\Downloads\setup_final(2).exe</div>
+    <p style="font-size:12px;color:#8a8a8a;">Flagged by real-time protection — low confidence</p>
+    <div class="btn-row">
+      <button id="dismiss">Remind me later</button>
+      <button id="enter">Run quick scan</button>
+    </div>
+  </div>
+</main>
+
+<section id="fake-check">
+  <div class="scancard">
+    <div class="scanhead">
+      <div class="ring"></div>
+      <div>
+        <h2>Quick scan in progress</h2>
+        <span id="scanned">0 items scanned</span>
+      </div>
+    </div>
+    <div id="logs"></div>
+    <div class="progress"><div id="bar"></div></div>
+    <div class="statline">
+      <span id="pct">0%</span>
+      <span>Threats found: <span id="threatcount">0</span></span>
+    </div>
+  </div>
+</section>
+
+<section id="gotcha">
+  <div class="scancard">
+    <h2>Relax — nothing happened.</h2>
+    <p>No files were touched. No malware. You just got pranked.</p>
+    <div class="btn-row">
+      <button id="replay">Run it on someone else</button>
+    </div>
+  </div>
+</section>
+
+<div id="jumpscare">
+  <div id="trollText">GOTCHA</div>
+  <div id="subText">tap anywhere or press ESC</div>
+</div>
+<div id="escHint">ESC to exit</div>
+
+<script>
+const enter = document.getElementById("enter");
+const dismiss = document.getElementById("dismiss");
+const warning = document.getElementById("warning");
+const check = document.getElementById("fake-check");
+const gotcha = document.getElementById("gotcha");
+const logs = document.getElementById("logs");
+const bar = document.getElementById("bar");
+const pct = document.getElementById("pct");
+const scanned = document.getElementById("scanned");
+const threatcount = document.getElementById("threatcount");
+const jumpscare = document.getElementById("jumpscare");
+const escHint = document.getElementById("escHint");
+const replay = document.getElementById("replay");
+const body = document.body;
+
+const dirs = [
+  "C:\\Windows\\System32\\drivers\\",
+  "C:\\Users\\Public\\AppData\\Local\\Temp\\",
+  "C:\\Program Files\\Common Files\\",
+  "C:\\Users\\Public\\Downloads\\",
+  "C:\\Windows\\Prefetch\\",
+  "C:\\ProgramData\\Microsoft\\",
+];
+const files = ["ntkrnl.tmp","update_cache.db","svc_host.dll","session.dat","cache_0193.bin","driver_pkg.sys","reg_backup.hiv","font_cache.dat"];
+function randLine() {
+  const d = dirs[Math.floor(Math.random()*dirs.length)];
+  const f = files[Math.floor(Math.random()*files.length)];
+  return d + f;
+}
+
+dismiss.addEventListener("click", () => {
+  warning.querySelector("h1").textContent = "Are you sure?";
+  warning.querySelector("p").textContent = "Unscanned devices are 3x more likely to be compromised.";
+});
+
+let audioCtx;
+function playScreech() {
+  try {
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    const now = audioCtx.currentTime;
+    const gain = audioCtx.createGain();
+    gain.gain.setValueAtTime(0.001, now);
+    gain.gain.exponentialRampToValueAtTime(0.55, now + 0.03);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 1.6);
+    gain.connect(audioCtx.destination);
+
+    const osc1 = audioCtx.createOscillator();
+    osc1.type = 'sawtooth';
+    osc1.frequency.setValueAtTime(180, now);
+    osc1.frequency.exponentialRampToValueAtTime(1600, now + 0.15);
+    osc1.frequency.exponentialRampToValueAtTime(140, now + 1.1);
+    osc1.connect(gain);
+    osc1.start(now); osc1.stop(now + 1.6);
+
+    const bufferSize = audioCtx.sampleRate * 0.25;
+    const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i=0;i<bufferSize;i++) data[i] = (Math.random()*2-1) * (1 - i/bufferSize);
+    const noise = audioCtx.createBufferSource();
+    noise.buffer = buffer;
+    const noiseGain = audioCtx.createGain();
+    noiseGain.gain.setValueAtTime(0.7, now);
+    noise.connect(noiseGain); noiseGain.connect(audioCtx.destination);
+    noise.start(now);
+  } catch(e) {}
+}
+
+enter.addEventListener("click", async () => {
+  try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); } catch(e){}
+  warning.style.display = "none";
+  check.style.display = "block";
+
+  let scannedCount = 0;
+  let progress = 0;
+  const totalSteps = 26;
+  for (let i = 0; i < totalSteps; i++) {
+    scannedCount += Math.floor(30 + Math.random()*90);
+    scanned.textContent = scannedCount.toLocaleString() + " items scanned";
+    const isFlag = i === 18 || i === 23;
+    const line = document.createElement("div");
+    line.className = isFlag ? "flag" : "";
+    line.textContent = (isFlag ? "⚠ " : "") + randLine();
+    logs.prepend(line);
+    while (logs.children.length > 8) logs.removeChild(logs.lastChild);
+    if (isFlag) threatcount.textContent = String(Number(threatcount.textContent) + 1);
+
+    progress = Math.min(100, Math.round(((i+1)/totalSteps)*100));
+    bar.style.width = progress + "%";
+    pct.textContent = progress + "%";
+    await new Promise(r => setTimeout(r, 90 + Math.random()*90));
+  }
+  await new Promise(r => setTimeout(r, 900));
+  triggerTroll();
+});
+
+function triggerTroll() {
+  check.style.display = "none";
+  jumpscare.style.display = "flex";
+  escHint.style.display = "block";
+  body.classList.add("strobe");
+  jumpscare.classList.add("shakeit");
+  document.documentElement.requestFullscreen?.().catch(() => {});
+  playScreech();
+  setTimeout(() => {
+    body.classList.remove("strobe");
+    jumpscare.classList.remove("shakeit");
+  }, 1400);
+}
+
+function exitScare() {
+  if (document.fullscreenElement) document.exitFullscreen?.();
+  jumpscare.style.display = "none";
+  escHint.style.display = "none";
+  body.classList.remove("strobe");
+  jumpscare.classList.remove("shakeit");
+  gotcha.style.display = "block";
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && jumpscare.style.display === "flex") exitScare();
+});
+jumpscare.addEventListener("click", () => { if (jumpscare.style.display === "flex") exitScare(); });
+
+replay.addEventListener("click", () => {
+  gotcha.style.display = "none";
+  warning.style.display = "block";
+  warning.querySelector("h1").textContent = "This device hasn't been scanned in 47 days";
+  warning.querySelector("p").textContent = "Windows Defender recommends running a quick scan to check for potential threats.";
+  logs.innerHTML = "";
+  bar.style.width = "0%";
+  pct.textContent = "0%";
+  threatcount.textContent = "0";
+  scanned.textContent = "0 items scanned";
+});
 </script>
+</body>
+</html>
